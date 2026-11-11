@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-paper: #FAF9F5;
+    --text-ink: #17191C;
+    --border-divider: #DCDAD2;
+  }
+
+  body {
+    background-color: #FAF9F5;
+    color: #17191C;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Editorial Newspaper accents */
+.editorial-grid-border {
+  border-color: #DCDAD2;
+}
+
+.editorial-header-rule {
+  border-bottom: 2px solid #17191C;
+}
+
+.editorial-double-rule {
+  border-bottom: 3px double #17191C;
+}
+
+.editorial-sub-rule {
+  border-bottom: 1px solid #DCDAD2;
+}
+
+.editorial-vertical-rule {
+  border-right: 1px solid #DCDAD2;
+}
+
+/* Custom newspaper halftone / paper texture feeling */
+.paper-pattern {
+  background-color: #FAF9F5;
+  background-image: radial-gradient(#17191C 0.4px, transparent 0.4px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar for horizontal category ribbon and readers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DCDAD2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #92977C;
+}
+
+/* React Flow custom styling */
+.react-flow__node {
+  border-radius: 4px !important;
+}
+
+.react-flow__handle {
+  background: #315BEA !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+
